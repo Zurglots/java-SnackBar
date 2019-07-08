@@ -7,9 +7,9 @@ public class Snack
 	private String name;
 	private int quantity;
 	private double cost;
-	private int vendID;
+	private String vendID;
 
-	public Snack(int id, String name, int quantity, double cost, int vendID)
+	public Snack(String name, int quantity, double cost, String vendID)
 	{
 		maxId++;
 		id = maxId;
@@ -27,7 +27,7 @@ public class Snack
 
 	public int setId(int id) // is this independent from maxId? What is this specific ID for?
 	{
-		this.id = id
+		this.id = id;
 	}
 
 	public String getName()
@@ -60,19 +60,26 @@ public class Snack
 		this.cost = cost;
 	}
 
-	public int getVendID()
+	public double getTotalCost(int quantity)
+	{
+		return quantity * cost;
+	}
+
+	public String getVendID()
 	{
 		return vendID;
 	}
 
-	public void setVendID(int vendID)
+	public void setVendID(String vendID)
 	{
 		this.vendID = vendID;
 	}
 
-	public void buySnack()
-
-
+	public double buySnack(int quantity)
+	{
+		this.quantity - quantity
+		return getTotalCost(quantity)
+	}
 
 
 }

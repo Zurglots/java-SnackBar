@@ -10,10 +10,35 @@ public class Customer
 
 	public Customer(String name, double cash)
 	{
-		maxId++
+		maxId++;
 		this.id = maxId;
 		this.name = name;
 		this.cash = cash;
+	}
+
+	public String getName()
+	{
+		return name
+	}
+
+	public void addCash(double cash)
+	{
+		this.cash = this.cash + cash
+	}
+
+	public double getCash()
+	{
+		return cash
+	}
+
+	public void makePurchase()
+	{
+		this.cash = this.cash - buySnack()
+	}
+
+	public void newCash()
+	{
+		this.cash = makePurchase()
 	}
 
 }
