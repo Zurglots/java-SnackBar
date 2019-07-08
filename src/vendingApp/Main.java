@@ -14,18 +14,18 @@ public class Main
 		Vendingmachine m3 = new Vendingmachine("Office");
 
 		// Snacks in Vending Machine 1
-		Snack chips = new Snack("Chips", 36, 1.75, m1.getId())
-		Snack chocolate = new Snack("Chocolate Bar", 36, 1.00, m1.getId())
-		Snack pretzel = new Snack("Pretzel", 30, 2.00, m1.getId())
+		Snack chips = new Snack("Chips", 36, 1.75, m1.getId());
+		Snack chocolate = new Snack("Chocolate Bar", 36, 1.00, m1.getId());
+		Snack pretzel = new Snack("Pretzel", 30, 2.00, m1.getId());
 
 		// Snacks in Vending Machine 2
-		Snack soda = new Snack("Soda", 24, 2.50, m2.getId())
-		Snack water = new Snack("Water", 20, 2.75, m2.getId())
+		Snack soda = new Snack("Soda", 24, 2.50, m2.getId());
+		Snack water = new Snack("Water", 20, 2.75, m2.getId());
 
 		//Processing Vending Requests
 		// soda.buySnack(3);
 
-		c1.soda.buySnack(3);
+		c1.makePurchase(3, soda);
 
 
 	}

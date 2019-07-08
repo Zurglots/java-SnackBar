@@ -18,27 +18,27 @@ public class Customer
 
 	public String getName()
 	{
-		return name
+		return name;
 	}
 
 	public void addCash(double cash)
 	{
-		this.cash = this.cash + cash
+		this.cash = this.cash + cash;
 	}
 
 	public double getCash()
 	{
-		return cash
+		return cash;
 	}
 
-	public void makePurchase()
+	public void makePurchase(int quantity, Snack snack)
 	{
-		this.cash = this.cash - buySnack()
+		this.cash = this.cash - snack.buySnack(quantity);
 	}
 
-	public void newCash()
-	{
-		this.cash = makePurchase()
-	}
+	// public void newCash()
+	// {
+	// 	this.cash = makePurchase();
+	// }
 
 }

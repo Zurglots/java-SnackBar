@@ -7,9 +7,9 @@ public class Snack
 	private String name;
 	private int quantity;
 	private double cost;
-	private String vendID;
+	private int vendID;
 
-	public Snack(String name, int quantity, double cost, String vendID)
+	public Snack(String name, int quantity, double cost, int vendID)
 	{
 		maxId++;
 		id = maxId;
@@ -25,7 +25,7 @@ public class Snack
 		return id;
 	}
 
-	public int setId(int id) // is this independent from maxId? What is this specific ID for?
+	public void setId(int id) // is this independent from maxId? What is this specific ID for?
 	{
 		this.id = id;
 	}
@@ -65,20 +65,20 @@ public class Snack
 		return quantity * cost;
 	}
 
-	public String getVendID()
+	public int getVendID()
 	{
 		return vendID;
 	}
 
-	public void setVendID(String vendID)
+	public void setVendID(int vendID)
 	{
 		this.vendID = vendID;
 	}
 
 	public double buySnack(int quantity)
 	{
-		this.quantity - quantity
-		return getTotalCost(quantity)
+		this.quantity -= quantity; // -= equals itself minus quantity
+		return getTotalCost(quantity);
 	}
 
 
