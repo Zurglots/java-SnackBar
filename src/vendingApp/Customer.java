@@ -36,9 +36,4 @@ public class Customer
 		this.cash = this.cash - snack.buySnack(quantity);
 	}
 
-	// public void newCash()
-	// {
-	// 	this.cash = makePurchase();
-	// }
-
 }
